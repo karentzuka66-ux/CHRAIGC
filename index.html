@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集 | AI漫剧全流程创作师</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050714;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* 霓虹渐变背景 */
+        .bg-gradient-glow {
+            background: radial-gradient(circle at 50% -10%, #2b1d5a 0%, #050714 50%);
+        }
+
+        /* 模拟图中的紫色/青色按钮 */
+        .btn-primary {
+            background: linear-gradient(90deg, #8a2be2, #00d2ff);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* 毛玻璃卡片效果 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        /* 仿图中的蓝色光晕 */
+        .glow-border:hover {
+            border-color: #00d2ff;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+        }
+
+        /* 文字渐变 */
+        .text-gradient {
+            background: linear-gradient(90deg, #fff, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gradient-glow">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-extrabold tracking-tighter">PLAY <span class="text-purple-500">AI</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#" class="hover:text-white transition">首页</a>
+            <a href="#portfolio" class="hover:text-white transition">作品</a>
+            <a href="#skills" class="hover:text-white transition">技能</a>
+            <a href="#contact" class="hover:text-white transition">合作</a>
+        </div>
+        <button class="px-6 py-2 rounded-full border border-purple-500 text-sm hover:bg-purple-500 transition">联系我</button>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-8 py-16 lg:flex items-center">
+        <div class="lg:w-1/2 space-y-8">
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight">
+                专注治愈系 <br>
+                <span class="text-gradient">AIGC 漫剧创作</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-lg leading-relaxed">
+                专注AIGC漫剧创作3年，擅长AI角色生成、分镜设计与全流程落地。我用AI赋予每一个故事鲜活的画面，让创意以最快的速度降临现实。
+            </p>
+            <div class="flex space-x-4">
+                <button class="btn-primary px-8 py-4 rounded-xl font-bold">浏览作品</button>
+                <button class="bg-white/5 hover:bg-white/10 px-8 py-4 rounded-xl font-bold border border-white/10 transition">了解更多</button>
+            </div>
+            <div class="flex space-x-12 pt-8">
+                <div>
+                    <div class="text-3xl font-bold">30+</div>
+                    <div class="text-gray-500 text-sm">完成部数</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold">10w+</div>
+                    <div class="text-gray-500 text-sm">全网播放</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold">100%</div>
+                    <div class="text-gray-500 text-sm">客户满意度</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 mt-16 lg:mt-0 relative flex justify-center">
+            <div class="glass-card p-4 relative overflow-hidden group">
+                <img src="https://via.placeholder.com/400x550/1e1e2e/ffffff?text=AI+Artwork+Showcase" alt="Hero Image" class="rounded-2xl w-full h-auto object-cover">
+                <div class="absolute bottom-8 left-8 right-8 p-6 glass-card bg-black/20">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-xs text-cyan-400 font-bold mb-1">正在连载</p>
+                            <h3 class="text-xl font-bold">《赛博都市：霓虹漫影》</h3>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-xs text-gray-400">创作工具</p>
+                            <p class="font-mono text-sm">MJ + SD + PR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 py-12 border-y border-white/5 flex flex-wrap justify-between items-center opacity-50 grayscale hover:grayscale-0 transition duration-500">
+        <span class="text-xl font-bold">Midjourney</span>
+        <span class="text-xl font-bold">Stable Diffusion</span>
+        <span class="text-xl font-bold">Runway Gen-2</span>
+        <span class="text-xl font-bold">Pika Labs</span>
+        <span class="text-xl font-bold">Adobe PR</span>
+    </section>
+
+    <section id="portfolio" class="max-w-7xl mx-auto px-8 py-24">
+        <h2 class="text-3xl font-bold mb-12 flex items-center">
+            <span class="w-8 h-[2px] bg-purple-500 mr-4"></span> 精选作品案例
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card p-3 group cursor-pointer glow-border transition-all">
+                <div class="relative mb-4 overflow-hidden rounded-xl">
+                    <img src="https://via.placeholder.com/300x350/222/fff?text=Healing+Manga" class="w-full transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="px-2 pb-2">
+                    <h4 class="font-bold">治愈系短篇《春日迟》</h4>
+                    <div class="flex justify-between mt-3 text-xs text-gray-400">
+                        <span>时长: 15s</span>
+                        <span class="text-cyan-400">SD + ControlNet</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-3 group cursor-pointer glow-border transition-all">
+                <div class="relative mb-4 overflow-hidden rounded-xl">
+                    <img src="https://via.placeholder.com/300x350/222/fff?text=Suspense+Manga" class="w-full transform group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="px-2 pb-2">
+                    <h4 class="font-bold">悬疑系列《镜中人》</h4>
+                    <div class="flex justify-between mt-3 text-xs text-gray-400">
+                        <span>周期: 3天</span>
+                        <span class="text-cyan-400">MJ + 漫芽糖</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <section id="skills" class="max-w-7xl mx-auto px-8 py-20 bg-white/5 rounded-[40px] mb-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">核心能力矩阵</h2>
+            <p class="text-gray-400 mt-4">从脚本拆解到后期渲染的全链路AI解决方案</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-8">
+                <div class="text-4xl mb-4">🧠</div>
+                <h3 class="text-xl font-bold mb-3">Prompt 深度工程</h3>
+                <p class="text-gray-400 text-sm">精准还原角色一致性，通过ControlNet精细控制人物动态与表情。</p>
+            </div>
+            <div class="p-8">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-3">漫剧分镜设计</h3>
+                <p class="text-gray-400 text-sm">深度电影感构图，擅长多题材脚本改编，确保叙事节奏丝滑顺畅。</p>
+            </div>
+            <div class="p-8">
+                <div class="text-4xl mb-4">🎬</div>
+                <h3 class="text-xl font-bold mb-3">全流程后期落地</h3>
+                <p class="text-gray-400 text-sm">整合剪映/PR高效出片，适配AI配音与环境音效，交付即上线级别作品。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="max-w-7xl mx-auto px-8 mb-20">
+        <div class="btn-primary rounded-[32px] p-12 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl font-bold mb-6">开启你的 AI 漫剧创作之约</h2>
+                <p class="mb-8 opacity-90 max-w-xl mx-auto text-lg">无论您是寻求定制化的漫剧全案，还是想交流Prompt技巧，我都在这里等待您的讯息。</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:yourname@example.com" class="bg-black px-8 py-3 rounded-full hover:bg-opacity-80 transition">发送邮件</a>
+                    <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition">添加微信</a>
+                </div>
+            </div>
+            <div class="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="mt-20 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm border-t border-white/5 pt-8">
+            <div class="mb-4 md:mb-0 text-white font-bold">PLAY AI / 2026</div>
+            <div class="flex space-x-8">
+                <a href="#" class="hover:text-white">小红书</a>
+                <a href="#" class="hover:text-white">抖音</a>
+                <a href="#" class="hover:text-white">哔哩哔哩</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
